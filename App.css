@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color:rgb(173, 213, 237);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: brown;
+}
+
+/* Budget Section */
+.budget-section {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.budget-section h2 {
+  margin-bottom: 10px;
+}
+
+/* Expense Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+form input,
+form select,
+form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Expense List Styles */
+.expense-list {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.expense-item:last-child {
+  border-bottom: none;
+}
+
+.expense-title {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.expense-amount {
+  color: #28a745;
+}
+
+.expense-category {
+  font-style: italic;
+  color: #6c757d;
+}
+
+/* Delete Button */
+.delete-button {
+  background-color: #dc3545; /* Bootstrap danger color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Expense Summary Styles */
+.expense-summary {
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #e9f7fd; /* Light blue background */
+}
+
+.expense-summary h3 {
+  margin: 5px 0;
+  font-weight: normal;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+
+  .expense-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
